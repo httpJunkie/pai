@@ -3,7 +3,7 @@
 ## Installation through git (See implementation instructions above)
 
 * Run ```git clone https://github.com/httpJunkie/pai.git```
-* Run ```cd pai```
+* Run ```cd pai\paitest```
 * Run ```bower install```
 * Run ```npm install```
 * Run ```gulp```
