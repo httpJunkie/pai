@@ -1,0 +1,50 @@
+[
+    {
+        "teamMemberId": 1,
+        "name": "Tamer",
+        "title": "Senior Software Engineer",
+        "facebookLink": "http://www.facebook.com/tamer",
+        "twitterLink": "http://www.twitter.com/tamedog",
+        "instagramLink": "http://www.instagram.com/tamer",
+        "linkedinLink": "http://www.linkedin.com/tamer",
+        "imgPath": "/Content/images/team/tamer.png",
+        "UserName": "tamer",
+        "TmPassword": "password"
+    },
+    {
+        "teamMemberId": 2,
+        "name": "Hazem",
+        "title": "JavaScript Developer",
+        "facebookLink": "http://www.facebook.com/hazem",
+        "twitterLink": "http://www.twitter.com/mrhazem",
+        "instagramLink": "http://www.instagram.com/haztheman",
+        "linkedinLink": "http://www.linkedin.com/hazem",
+        "imgPath": "/Content/images/team/hazem.png",
+        "UserName": "hazem",
+        "TmPassword": "password"
+    },
+    {
+        "teamMemberId": 3,
+        "name": "Mohammed",
+        "title": "ASP.NET Developer",
+        "facebookLink": "http://www.facebook.com/mo",
+        "twitterLink": "http://www.twitter.com/mo-hammed",
+        "instagramLink": "http://www.instagram.com/mohammed",
+        "linkedinLink": "http://www.linkedin.com/themohammed",
+        "imgPath": "/Content/images/team/mohammed.png",
+        "UserName": "mohammed",
+        "TmPassword": "password"
+    },
+    {
+        "teamMemberId": 4,
+        "name": "Ahmed",
+        "title": "UI/UX Design",
+        "facebookLink": "http://www.facebook.com/ahmed",
+        "twitterLink": "http://www.twitter.com/ahmedistheman",
+        "instagramLink": "http://www.instagram.com/ahmedfarjad",
+        "linkedinLink": "http://www.linkedin.com/ahmeddy",
+        "imgPath": "/Content/images/team/ahmed.png",
+        "UserName": "ahmed",
+        "TmPassword": "password"
+    }
+]

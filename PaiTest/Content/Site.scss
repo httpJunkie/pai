@@ -1,0 +1,480 @@
+/* ISAMA SCSS Site Variables (Anythng used more than once sitewide)*/
+$IsamaBlue: #00a1de;
+$DefaultGrey: #575756;
+$DefaultLightGrey: #eceef4;
+$BodyText: #6d6e71;
+$HeadingText: #666666;
+$FooterGray: #2b2c2d;
+
+$GoogleRed: #dd4b39;    /* https://developers.google.com/+/branding-guidelines */
+$TwitterBlue: #55acee;  /* https://about.twitter.com/company/brand-assets */
+$FacebookBlue: #3b5998;
+$InstagramBlue: #517fa4;
+$LinkedinBlue: #007bb6;
+$TumblrBlue: #35465c;   /* http://unwrapping.tumblr.com/post/91504567257/tumblr-blue-hex-code-color-35465c */
+
+$SocialGrey: #6d6e71;
+$SocialIconSize: 1.5625em;
+$SocialFootIconSize: 1.265em;
+
+
+/* BODY STYLES */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: $BodyText;
+    h1,h2,h3,h4 {
+        color: $HeadingText;
+    }
+    a, a:hover, a:visited {
+        text-decoration: none;
+    }
+}
+#mapDiv { 
+    width: 100%; 
+    height: 300px;
+
+}
+/* REALLY BOOTSTRAP? 
+    After an hour of testing every style on my page this got rid of horizontal scrollers? 
+*/.row { margin: 0; padding: 0 }
+
+/* Top Navbar Color Override*/
+.navbar-default {
+    background-color: $DefaultLightGrey;
+    border-color: $DefaultLightGrey;
+}
+
+/* Bootstrap 3 removed nav bar vertical dividers lets add them back and customize height */
+.navbar .divider-vertical {
+    height: 63px;
+    margin: 0 9px;
+    border-left: 1px solid #dee0e6;
+}
+.navbar-nav > li > a {
+    width: 50px;
+    margin: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 63px;
+}
+
+/* Leave default phone menu heights in tact instead of inheriting custom nav height */
+
+@media (max-width: 767px) {
+    .navbar-nav > li > a {
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;}
+}
+
+/* Customize default button styles */
+.btn-default {
+    margin-top: 6px;
+    font-weight: 600;
+    color: $DefaultGrey;
+    background-color: #fff;
+    border-color: #fff;
+}
+.btn-default.active, .btn-default:active, .btn-default:hover, .open>.dropdown-toggle.btn-default {
+    margin-top: 6px;
+    font-weight: 600;
+    color: #fff;
+    background-color: $IsamaBlue;
+    border-color:  $IsamaBlue;
+}
+#social-right {
+    margin-right: 21px;
+}
+
+/* Top Left Nav Spacers */
+li.spacer {
+    margin: 5px 5px 5px 5px;
+}
+li.spacerFirst {
+    margin: 5px 10px 5px 5px;
+}
+
+/* SOCIAL LINKS START */
+.facebookBlue {
+    color: $FacebookBlue;
+    font-size: $SocialIconSize;
+}
+.navbar-nav > li > a, .navbar-nav > li > a:hover .facebookBlue  {
+    color: $SocialGrey;
+}
+
+.twitterBlue {
+    color: $TwitterBlue;
+    font-size: $SocialIconSize;
+}
+.navbar-nav > li > a, .navbar-nav > li > a:hover .twitterBlue  {
+    color: $SocialGrey;
+}
+
+.instagramBlue {
+    color: $InstagramBlue;
+    font-size: $SocialIconSize;
+}
+.navbar-nav > li > a, .navbar-nav > li > a:hover .instagramBlue  {
+    color: $SocialGrey;
+}
+
+.googleRed {
+    color: $GoogleRed;
+    font-size: $SocialIconSize;
+}
+.navbar-nav > li > a, .navbar-nav > li > a:hover .googleRed  {
+    color: $SocialGrey;
+}
+/* SOCIAL LINKS END */
+
+/* Add style that will allow for a grid with no gutters */
+.header-logo {
+    max-width: 100%;
+}
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.row.no-gutters > [class^="col-"], .row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.header-margin {
+    margin-top: 110px;
+}
+
+/* CONTACT BAR START */
+.tooltip {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 300;
+}
+.tooltip.top {
+    padding: 5px 0;
+    margin-top: -1em;
+}
+.tooltip.top .tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 7px 7px 0;
+}
+.contact-link + .tooltip > .tooltip-inner {
+    background-color: #fff; 
+    color: #333; 
+    border: 1px solid #d4d4d4; 
+    padding: 1em;
+    font-size: 1em;
+}
+.contact-link + .tooltip.top > .tooltip-arrow {
+    border-top: 5px solid #d4d4d4;
+}
+.contact-bar {
+    margin-top: 55px;
+}
+.contact-icon {
+    color: $SocialGrey;
+    font-size: 2em;
+}
+.contact-bar > ul.list-inline > li > a, .contact-bar > ul.list-inline > li > a:hover .contact-icon  {
+    color: $IsamaBlue;
+}
+.contact-bar .divider-vertical {
+    height: 24px;
+    margin: 0 9px;
+    border-left: 1px solid #bcbec3;
+}
+.contact-bar > ul.list-inline > li > a.contact-link {
+    width: 100px;
+    margin: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 63px;
+}
+/* CONTACT BAR END */
+
+
+/* SUB NAV START */
+.subnav {
+    height: 85px;
+    border-top: solid 1px $DefaultLightGrey;
+    background-color: #fff;
+}
+.sub-nav-item {
+    height: 84px;
+    position: relative;
+    display: inline-block;
+    padding: 32px 24px 24px 24px;
+    font-weight: 600;
+    color: $DefaultGrey;
+    border-right: 1px solid $DefaultLightGrey;
+    margin-right: -1px;
+    overflow: hidden;
+}
+.sub-nav > a:last-of-type {
+    border-right: none !important;
+}
+
+.sub-nav-item:focus {
+    color: $IsamaBlue;
+    text-decoration: none;
+}
+.sub-nav .active {
+    color: $IsamaBlue;
+}
+.sub-nav .active:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-bottom: 0;
+    margin-left: -19px;
+    vertical-align: middle;
+    content: " ";
+    border-right: 19px solid transparent;
+    border-bottom: 9px solid;
+    border-left: 19px solid transparent;
+}
+
+
+.sub-nav .sub-nav-item:hover {
+    color: $IsamaBlue;
+}
+.sub-nav .sub-nav-item:hover:after {
+    color: $DefaultGrey;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-bottom: 0;
+    margin-left: -19px;
+    vertical-align: middle;
+    content: " ";
+    border-right: 19px solid transparent;
+    border-bottom: 9px solid;
+    border-left: 19px solid transparent;
+}
+/* SUB NAV END */
+
+
+/* MAIN SECTION START */
+.mainBg {
+    height: 885px;
+    background-color: #2973b0;
+    background-image: url('images/isami-bg-80_blur.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+/* MAIN SECTION END */
+
+
+/* ABOUT SECTION START */
+.about-section {
+    margin-top: 6em;
+    padding-top: 6em;
+}
+/* ABOUT SECTION END*/
+
+
+/* TITLE SECTION END */
+.title-section {
+    margin-top: 6em;
+    padding-top: 6em;
+    background-image: url(/Content/images/title/title-divider.png);
+    background-repeat: no-repeat;
+    background-position: 0 0, center;
+}
+/* TITLE SECTION END */
+
+
+/* SERVICE SECTIONS START */
+.services {
+    margin-top: 2em;
+    img.media-object {
+        width: 100px;
+    }
+}
+.service-section:last-of-type {
+    border-left: 1px solid $DefaultLightGrey;
+}
+
+.service-section > .col-sm-12 {
+    margin-top: 6em;
+}
+/* SERVICE SECTIONS END */
+
+
+/* FOOTER START */
+footer {
+    width:100%;
+    height:80px;
+    background-color: $FooterGray;
+    bottom: 0;
+    left: 0;
+
+    padding-top: 2em;
+}
+
+/* SOCIAL FOOTER START */
+#social-foot {
+    color: $BodyText;
+    padding: 0;
+    margin: 0;
+}
+#social-foot ul {
+    display: inline;
+    border: none;
+    padding: 0;
+    margin: 0;
+} 
+#social-foot ul li.divider-vertical {
+    height: 50px;
+    margin-right: 1em;
+    margin-left: 0.5em;
+    border-left: 1px solid $DefaultGrey;
+}
+#social-foot ul li {
+    border: none;
+    list-style: none;
+    display: inline;
+    margin: 0;
+    a.facebookBlue {
+        color: $SocialGrey;
+        font-size: $SocialFootIconSize;
+    }
+    a.facebookBlue:hover   {
+        color: $FacebookBlue;
+    }
+    a.twitterBlue {
+        color: $SocialGrey;
+        font-size: $SocialFootIconSize;
+    }
+    a.twitterBlue:hover   {
+        color: $TwitterBlue;
+    }
+    a.instagramBlue {
+        color: $SocialGrey;
+        font-size: $SocialFootIconSize;
+    }
+    a.instagramBlue:hover {
+        color: $InstagramBlue;
+    }
+    a.googleRed {
+        color: $SocialGrey;
+        font-size: $SocialFootIconSize;
+    }
+    a.googleRed:hover {
+        color: $GoogleRed;
+    }
+ }
+/* SOCIAL FOOTER END */
+
+ 
+/* FOOTER NAVIGATION START */
+#foot-nav {
+    color: $BodyText;
+}
+#foot-nav ul {
+
+    display: inline;
+    border: none;
+} 
+#foot-nav ul li {
+    border: none;
+    list-style: none;
+    display: inline;
+    a {
+        color: $BodyText;
+    }
+    a:hover {
+        color: $DefaultLightGrey;
+        text-decoration: none;
+    }
+}
+#foot-nav ul li:before {
+ content: "\2022";
+ color: $BodyText;
+ margin-right: 0.5em;
+ margin-left: 0.25em;
+ }
+ 
+#foot-nav ul li.first:before {
+ content: " ";
+ }
+/* FOOTER NAVIGATION END */
+
+/* FOOTER END */
+.team-section {
+    margin-top: 6em;
+    margin-bottom: 3em;
+}
+.team-section-media {
+    margin-bottom: 3em;
+}
+.memberBox {
+    width: 278px;
+    height: 394px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding-top: 2em;
+    }
+    .social-stripe {
+    color: $BodyText;
+    height: 15%;
+    background-color: #fff;
+    margin-top: 3em;
+    padding-top: 1em;
+    }
+    .social-stripe ul {
+        display: inline;
+        border: none;
+        margin:-10px;
+    } 
+    .social-stripe ul li {
+        border: none;
+        list-style: none;
+        display: inline;
+        a {
+            color: #cdcdcd;
+        }
+        a:hover {
+            color: $DefaultGrey;
+            text-decoration: none;
+        }
+    }
+    .social-stripe ul li:before {
+     content: " ";
+     color: $BodyText;
+     margin-right: 1em;
+     margin-left: 1em;
+     }
+     
+    .social-stripe ul li.first:before {
+     content: " ";
+     margin-left: 0 !important;
+     }
+}
+
+/*.projects-section {
+    margin-top: 6em;
+    padding-top: 6em;
+    background-image: url(/Content/images/title/projects-divider.png);
+    background-repeat: no-repeat;
+    background-position: 0 0, center;
+}*/

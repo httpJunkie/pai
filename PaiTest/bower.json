@@ -1,0 +1,29 @@
+{
+  "name": "PaiTest",
+  "version": "0.0.1",
+  "authors": [
+    "Eric S. Bishard <eric@httpjunkie.com>"
+  ],
+  "description": "Post interview project for Productivity Apex Incorportated",
+  "license": "none",
+  "homepage": "httpJunkie.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "jquery-validation": "~1.14.0",
+    "jquery-validation-unobtrusive": "~3.2.2",
+    "modernizr": "~2.8.3",
+    "bootstrap": "~3.3.5",
+    "respond-minmax": "~1.4.2"
+  },
+  "devDependencies": {
+    "fontawesome": "~4.3.0",
+    "angular": "~1.4.3"
+  }
+}
