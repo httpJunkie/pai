@@ -1,6 +1,6 @@
 # pai
 
-## Installation through git (See implementation instructions above)
+## Installation instructions
 
 * Run ```git clone https://github.com/httpJunkie/pai.git```
 * Run ```cd pai\paitest```
