@@ -8,6 +8,9 @@
 * Run ```npm install```
 * Run ```gulp```
 
-Then run the project!
+Then run the project (PaiTest.sln)
+Hit Ctrl+F5
+And any backend nuget packages will install automatically during the first build.
 
-*There is a possibility you may have to change the localhost port in the appSettings in angular to match your paort number asigned by visual studio for your session.
+If you have any question please call me at 321.208.0997
+Because of the requirement to use a backend lie Web API, the project was very large to just package up in a zip file.
