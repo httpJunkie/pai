@@ -10,4 +10,4 @@
 
 Then run the project!
 
-*There is a possibility you may have to change the localhost port in the appSettings in angular
+*There is a possibility you may have to change the localhost port in the appSettings in angular to match your paort number asigned by visual studio for your session.
