@@ -265,7 +265,7 @@ li.spacerFirst {
 
 /* MAIN SECTION START */
 .mainBg {
-    height: 885px;
+    height: 450px;
     background-color: #2973b0;
     background-image: url('images/isami-bg-80_blur.jpg');
     background-size: auto;
@@ -281,8 +281,8 @@ li.spacerFirst {
 
 /* ABOUT SECTION START */
 .about-section {
-    margin-top: 6em;
-    padding-top: 6em;
+    margin-top: 2em;
+    padding-top: 2em;
 }
 /* ABOUT SECTION END*/
 
@@ -300,7 +300,7 @@ li.spacerFirst {
 
 /* SERVICE SECTIONS START */
 .services {
-    margin-top: 2em;
+    margin-top: 1em;
     img.media-object {
         width: 100px;
     }
@@ -331,6 +331,7 @@ footer {
     color: $BodyText;
     padding: 0;
     margin: 0;
+    margin-bottom: 0.25em;
 }
 #social-foot ul {
     display: inline;
@@ -470,11 +471,6 @@ footer {
      margin-left: 0 !important;
      }
 }
-
-/*.projects-section {
-    margin-top: 6em;
-    padding-top: 6em;
-    background-image: url(/Content/images/title/projects-divider.png);
-    background-repeat: no-repeat;
-    background-position: 0 0, center;
-}*/
+#mapDiv {
+    margin-top: 2em;
+}

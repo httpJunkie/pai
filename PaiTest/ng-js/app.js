@@ -9,18 +9,23 @@ angular
 function config($routeProvider) {
     $routeProvider
         .when("/", {
+            templateUrl: "/ng-js/aboutView.html",
+            controller: "aboutController",
+            controllerAs: "vm"
+        })
+        .when("/about", {
+            templateUrl: "/ng-js/aboutView.html",
+            controller: "aboutController",
+            controllerAs: "vm"
+        })
+        .when("/team", {
             templateUrl: "/ng-js/teamMemberListView.html",
             controller: "TeamMemberListCtrl",
             controllerAs: "vm"
         })
-        .when("/team", {
-            templateUrl: "/ng-js/teamView.html",
-            controller: "teamController",
-            controllerAs: "vm"
-        })
-        .when("/contact", {
-            templateUrl: "/ng-js/contactView.html",
-            controller: "contactController",
+        .when("/services", {
+            templateUrl: "/ng-js/servicesView.html",
+            controller: "servicesController",
             controllerAs: "vm"
         })
         .otherwise({ redirectTo: "/" });
@@ -59,13 +64,13 @@ function TeamMemberListCtrl(teamMemberResource) {
     };
 }
 
-function teamController() {
+function aboutController() {
     var vm = this;
     vm.title = "about";
     vm.subtitle = "about page";
 };
 
-function contactController() {
+function servicesController() {
     var vm = this;
     vm.title = "This is a contact page.";
 };

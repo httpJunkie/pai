@@ -272,11 +272,11 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="bower.json" />
-    <Content Include="ng-js\teamView.html" />
+    <Content Include="ng-js\aboutView.html" />
     <Content Include="ng-js\app.js" />
     <Content Include="ng-js\common\common-services.js" />
     <Content Include="ng-js\common\teamMemberResource.js" />
-    <Content Include="ng-js\contactView.html" />
+    <Content Include="ng-js\servicesView.html" />
     <Content Include="ng-js\teamMemberListView.html" />
     <Content Include="package.json" />
     <Content Include="Scripts\angular-bundle.min.js" />
