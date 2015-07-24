@@ -20,5 +20,6 @@ Because of the requirement to use a backend lie Web API, the project was very la
  - The links tht work are the "What about ISAMA",  "What we do" and "Excellent Team" : These links simply change out the content in order to show that the site has working angular routes. I wish I had enough time to do the projects section and more with the contact rather than just include the map. 
  - One thing I would like to point out is that the TEAM section when loaded is using $resource and the webAPI data to diisplay the team member cards. Ihave mocked the data with .json files, each of the team member cards has unique social links too.
  - If you click on the login button you will be asked to provide usernam and password, you can use any of the team members name "all lower case" Plus the password: "password" and this will log you in, passing data from the form to check against the team members password. There is notification once logged in and a logout button. I did not make this redirect to a new page.
+ - All front end packages have been installed using bower and npmand use gulp as a taskrunner.
 
 ##Thanks for the opportunity to work on this project~!
