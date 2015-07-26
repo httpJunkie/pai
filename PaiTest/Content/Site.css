@@ -45,7 +45,8 @@ body {
     line-height: 20px;
     padding-top: 10px;
     padding-bottom: 10px; } }
-.welcome-login {
+/* added styles for modal welcome message*/
+.modal-content > .modal-body > p.welcome-login {
   margin-top: 1em; }
 
 /* Customize default button styles */
@@ -54,14 +55,23 @@ body {
   font-weight: 600;
   color: #575756;
   background-color: #fff;
-  border-color: #fff; }
+  border-color: #eceef4; }
 
 .btn-default.active, .btn-default:active, .btn-default:hover, .open > .dropdown-toggle.btn-default {
   margin-top: 6px;
   font-weight: 600;
   color: #fff;
   background-color: #00a1de;
-  border-color: #00a1de; }
+  border-color: #eceef4; }
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: 0;
+  margin-top: 6px;
+  font-weight: 600;
+  color: #575756;
+  background-color: #fff;
+  border-color: #eceef4;
+  box-shadow: none; }
 
 #social-right {
   margin-right: 21px; }

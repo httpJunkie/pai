@@ -1,4 +1,7 @@
-﻿/*Create object literal to store map options*/
+﻿
+var contactMapDiv = "contact";
+
+/*Create object literal to store map options*/
 var mapOptions = {
     center: new google.maps.LatLng(24.683148, 46.689942),
     zoom: 14,
@@ -21,7 +24,7 @@ var mapOptions = {
 }
 
 function initMap() {
-    var map = new google.maps.Map(document.getElementById("mapDiv"), mapOptions);
+    var map = new google.maps.Map(document.getElementById(contactMapDiv), mapOptions);
     drawMarkers(map);
 }
 
@@ -35,5 +38,5 @@ function drawMarkers(map) {
         position: new google.maps.LatLng(24.683148, 46.689942),
         map: map,
         title: "ISAMA HQ"
-    });
+});
 }
