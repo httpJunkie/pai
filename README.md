@@ -1,11 +1,11 @@
 # pai
 
-## Installation through git (See implementation instructions above)
+## Installation instructions
 
 * Run ```git clone https://github.com/httpJunkie/pai.git```
 * Run ```cd pai\paitest```
 * Run ```bower install```
-* Run ```npm install```
+* Run ```npm install``` (this one takes a few minutes)
 * Run ```gulp```
 
 Then run the project (PaiTest.sln)
@@ -13,8 +13,7 @@ Hit Ctrl+F5
 And any backend nuget packages will install automatically during the first build.
 
 If you have any question please call me at 321.208.0997
-Because of the requirement to use a backend lie Web API, the project was very large to just package up in a zip file.
-
+Because of the requirement to use a backend like Web API, the project was very large to just package up in a zip file.
 
 ###Notes
  - The links tht work are the "What about ISAMA",  "What we do" and "Excellent Team" : These links simply change out the content in order to show that the site has working angular routes. I wish I had enough time to do the projects section and more with the contact rather than just include the map. 
