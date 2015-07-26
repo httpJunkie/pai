@@ -229,6 +229,7 @@
     <Content Include="Content\images\isami-bg-80_blur.jpg" />
     <Content Include="Content\images\logo-gray.png" />
     <Content Include="Content\images\logo-white.png" />
+    <Content Include="Content\images\projects\TitleGraphic_Beaker.png" />
     <Content Include="Content\images\services\branding.png" />
     <Content Include="Content\images\services\development.png" />
     <Content Include="Content\images\services\interior.png" />
@@ -272,12 +273,13 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="bower.json" />
-    <Content Include="ng-js\aboutView.html" />
+    <Content Include="ng-js\about.html" />
     <Content Include="ng-js\app.js" />
     <Content Include="ng-js\common\common-services.js" />
     <Content Include="ng-js\common\teamMemberResource.js" />
-    <Content Include="ng-js\servicesView.html" />
-    <Content Include="ng-js\teamMemberListView.html" />
+    <Content Include="ng-js\projects.html" />
+    <Content Include="ng-js\services.html" />
+    <Content Include="ng-js\team.html" />
     <Content Include="package.json" />
     <Content Include="Scripts\angular-bundle.min.js" />
     <Content Include="Scripts\bootstrap-bundle.min.js" />

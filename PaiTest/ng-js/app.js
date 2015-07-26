@@ -9,23 +9,28 @@ angular
 function config($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: "/ng-js/aboutView.html",
+            templateUrl: "/ng-js/about.html",
             controller: "aboutController",
             controllerAs: "vm"
         })
         .when("/about", {
-            templateUrl: "/ng-js/aboutView.html",
+            templateUrl: "/ng-js/about.html",
             controller: "aboutController",
             controllerAs: "vm"
         })
         .when("/team", {
-            templateUrl: "/ng-js/teamMemberListView.html",
+            templateUrl: "/ng-js/team.html",
             controller: "TeamMemberListCtrl",
             controllerAs: "vm"
         })
         .when("/services", {
-            templateUrl: "/ng-js/servicesView.html",
+            templateUrl: "/ng-js/services.html",
             controller: "servicesController",
+            controllerAs: "vm"
+        })
+        .when("/projects", {
+            templateUrl: "/ng-js/projects.html",
+            controller: "projectsController",
             controllerAs: "vm"
         })
         .otherwise({ redirectTo: "/" });

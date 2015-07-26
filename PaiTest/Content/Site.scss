@@ -5,6 +5,7 @@ $DefaultLightGrey: #eceef4;
 $BodyText: #6d6e71;
 $HeadingText: #666666;
 $FooterGray: #2b2c2d;
+$ProjectsGray: #efefef;
 
 $GoogleRed: #dd4b39;    /* https://developers.google.com/+/branding-guidelines */
 $TwitterBlue: #55acee;  /* https://about.twitter.com/company/brand-assets */
@@ -31,7 +32,6 @@ body {
 #contact { 
     width: 100%; 
     height: 300px;
-    margin-top: 2em;
 }
 
 /*  Remove horizontal scrollbars */
@@ -97,7 +97,6 @@ body {
     border-color:  $DefaultLightGrey;
     box-shadow: none;
 }
-
 #social-right {
     margin-right: 21px;
 }
@@ -156,7 +155,6 @@ li.spacerFirst {
     padding-right: 0;
     padding-left: 0;
 }
-
 .header-margin {
     margin-top: 110px;
 }
@@ -256,8 +254,6 @@ li.spacerFirst {
     border-bottom: 9px solid;
     border-left: 19px solid transparent;
 }
-
-
 .sub-nav .sub-nav-item:hover {
     color: $IsamaBlue;
 }
@@ -307,6 +303,7 @@ li.spacerFirst {
 .title-section {
     margin-top: 6em;
     padding-top: 6em;
+    padding-bottom: 2em;
     background-image: url(/Content/images/title/title-divider.png);
     background-repeat: no-repeat;
     background-position: 0 0, center;
@@ -314,7 +311,81 @@ li.spacerFirst {
 /* TITLE SECTION END */
 
 
-/* SERVICE SECTIONS START */
+/* PROJECTS SECTION START */
+.projects-section {
+    padding-bottom: 2em;
+    background-color: $ProjectsGray;
+}
+.topCurve {
+    padding-top: 4em;
+    margin-top: 6em;
+    border-radius: 50% 50% 0 0;
+    background-color: $ProjectsGray;
+    margin-bottom: 0;
+}
+/* PROJECTS SECTION END */
+
+
+/* TEAM SECTION START */
+.team-section {
+    margin-top: 6em;
+    margin-bottom: 3em;
+}
+.team-section-media {
+    margin-bottom: 3em;
+}
+.memberBox {
+    width: 278px;
+    height: 394px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding-top: 2em;
+    }
+    .social-stripe {
+    color: $BodyText;
+    height: 15%;
+    background-color: #fff;
+    margin-top: 3em;
+    padding-top: 1em;
+    }
+    .social-stripe ul {
+        display: inline;
+        border: none;
+        margin:-10px;
+    } 
+    .social-stripe ul li {
+        border: none;
+        list-style: none;
+        display: inline;
+        a {
+            color: #cdcdcd;
+        }
+        a:hover {
+            color: $DefaultGrey;
+            text-decoration: none;
+        }
+    }
+    .social-stripe ul li:before {
+     content: " ";
+     color: $BodyText;
+     margin-right: 1em;
+     margin-left: 1em;
+     }
+     
+    .social-stripe ul li.first:before {
+     content: " ";
+     margin-left: 0 !important;
+     }
+}
+/* TEAM SECTION END */
+
+
+/* SERVICE SECTION START */
 .services {
     margin-top: 1em;
     img.media-object {
@@ -324,23 +395,11 @@ li.spacerFirst {
 .service-section:last-of-type {
     border-left: 1px solid $DefaultLightGrey;
 }
-
 .service-section > .col-sm-12 {
     margin-top: 6em;
 }
-/* SERVICE SECTIONS END */
+/* SERVICE SECTION END */
 
-
-/* FOOTER START */
-footer {
-    width:100%;
-    height:80px;
-    background-color: $FooterGray;
-    bottom: 0;
-    left: 0;
-
-    padding-top: 2em;
-}
 
 /* SOCIAL FOOTER START */
 #social-foot {
@@ -399,11 +458,18 @@ footer {
 
  
 /* FOOTER NAVIGATION START */
+footer {
+    width:100%;
+    height:80px;
+    background-color: $FooterGray;
+    bottom: 0;
+    left: 0;
+    padding-top: 2em;
+}
 #foot-nav {
     color: $BodyText;
 }
 #foot-nav ul {
-
     display: inline;
     border: none;
 } 
@@ -425,65 +491,8 @@ footer {
  margin-right: 0.5em;
  margin-left: 0.25em;
  }
- 
 #foot-nav ul li.first:before {
  content: " ";
  }
 /* FOOTER NAVIGATION END */
-
 /* FOOTER END */
-.team-section {
-    margin-top: 6em;
-    margin-bottom: 3em;
-}
-.team-section-media {
-    margin-bottom: 3em;
-}
-.memberBox {
-    width: 278px;
-    height: 394px;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2em;
-    padding-top: 2em;
-    }
-    .social-stripe {
-    color: $BodyText;
-    height: 15%;
-    background-color: #fff;
-    margin-top: 3em;
-    padding-top: 1em;
-    }
-    .social-stripe ul {
-        display: inline;
-        border: none;
-        margin:-10px;
-    } 
-    .social-stripe ul li {
-        border: none;
-        list-style: none;
-        display: inline;
-        a {
-            color: #cdcdcd;
-        }
-        a:hover {
-            color: $DefaultGrey;
-            text-decoration: none;
-        }
-    }
-    .social-stripe ul li:before {
-     content: " ";
-     color: $BodyText;
-     margin-right: 1em;
-     margin-left: 1em;
-     }
-     
-    .social-stripe ul li.first:before {
-     content: " ";
-     margin-left: 0 !important;
-     }
-}

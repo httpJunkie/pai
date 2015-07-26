@@ -13,8 +13,7 @@ body {
 
 #contact {
   width: 100%;
-  height: 300px;
-  margin-top: 2em; }
+  height: 300px; }
 
 /*  Remove horizontal scrollbars */
 .row {
@@ -262,12 +261,74 @@ li.spacerFirst {
 .title-section {
   margin-top: 6em;
   padding-top: 6em;
+  padding-bottom: 2em;
   background-image: url(/Content/images/title/title-divider.png);
   background-repeat: no-repeat;
   background-position: 0 0, center; }
 
 /* TITLE SECTION END */
-/* SERVICE SECTIONS START */
+/* PROJECTS SECTION START */
+.projects-section {
+  padding-bottom: 2em;
+  background-color: #efefef; }
+
+.topCurve {
+  padding-top: 4em;
+  margin-top: 6em;
+  border-radius: 50% 50% 0 0;
+  background-color: #efefef;
+  margin-bottom: 0; }
+
+/* PROJECTS SECTION END */
+/* TEAM SECTION START */
+.team-section {
+  margin-top: 6em;
+  margin-bottom: 3em; }
+
+.team-section-media {
+  margin-bottom: 3em; }
+
+.memberBox {
+  width: 278px;
+  height: 394px;
+  background-color: #f5f5f5;
+  border-radius: 8px; }
+  .memberBox img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding-top: 2em; }
+  .memberBox .social-stripe {
+    color: #6d6e71;
+    height: 15%;
+    background-color: #fff;
+    margin-top: 3em;
+    padding-top: 1em; }
+  .memberBox .social-stripe ul {
+    display: inline;
+    border: none;
+    margin: -10px; }
+  .memberBox .social-stripe ul li {
+    border: none;
+    list-style: none;
+    display: inline; }
+    .memberBox .social-stripe ul li a {
+      color: #cdcdcd; }
+    .memberBox .social-stripe ul li a:hover {
+      color: #575756;
+      text-decoration: none; }
+  .memberBox .social-stripe ul li:before {
+    content: " ";
+    color: #6d6e71;
+    margin-right: 1em;
+    margin-left: 1em; }
+  .memberBox .social-stripe ul li.first:before {
+    content: " ";
+    margin-left: 0 !important; }
+
+/* TEAM SECTION END */
+/* SERVICE SECTION START */
 .services {
   margin-top: 1em; }
   .services img.media-object {
@@ -279,16 +340,7 @@ li.spacerFirst {
 .service-section > .col-sm-12 {
   margin-top: 6em; }
 
-/* SERVICE SECTIONS END */
-/* FOOTER START */
-footer {
-  width: 100%;
-  height: 80px;
-  background-color: #2b2c2d;
-  bottom: 0;
-  left: 0;
-  padding-top: 2em; }
-
+/* SERVICE SECTION END */
 /* SOCIAL FOOTER START */
 #social-foot {
   color: #6d6e71;
@@ -336,6 +388,14 @@ footer {
 
 /* SOCIAL FOOTER END */
 /* FOOTER NAVIGATION START */
+footer {
+  width: 100%;
+  height: 80px;
+  background-color: #2b2c2d;
+  bottom: 0;
+  left: 0;
+  padding-top: 2em; }
+
 #foot-nav {
   color: #6d6e71; }
 
@@ -364,49 +424,4 @@ footer {
 
 /* FOOTER NAVIGATION END */
 /* FOOTER END */
-.team-section {
-  margin-top: 6em;
-  margin-bottom: 3em; }
-
-.team-section-media {
-  margin-bottom: 3em; }
-
-.memberBox {
-  width: 278px;
-  height: 394px;
-  background-color: #f5f5f5;
-  border-radius: 8px; }
-  .memberBox img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2em;
-    padding-top: 2em; }
-  .memberBox .social-stripe {
-    color: #6d6e71;
-    height: 15%;
-    background-color: #fff;
-    margin-top: 3em;
-    padding-top: 1em; }
-  .memberBox .social-stripe ul {
-    display: inline;
-    border: none;
-    margin: -10px; }
-  .memberBox .social-stripe ul li {
-    border: none;
-    list-style: none;
-    display: inline; }
-    .memberBox .social-stripe ul li a {
-      color: #cdcdcd; }
-    .memberBox .social-stripe ul li a:hover {
-      color: #575756;
-      text-decoration: none; }
-  .memberBox .social-stripe ul li:before {
-    content: " ";
-    color: #6d6e71;
-    margin-right: 1em;
-    margin-left: 1em; }
-  .memberBox .social-stripe ul li.first:before {
-    content: " ";
-    margin-left: 0 !important; }
 
