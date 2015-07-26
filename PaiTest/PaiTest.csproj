@@ -274,6 +274,7 @@
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="bower.json" />
     <Content Include="ng-js\about.html" />
+    <Content Include="ng-js\all.html" />
     <Content Include="ng-js\app.js" />
     <Content Include="ng-js\common\common-services.js" />
     <Content Include="ng-js\common\teamMemberResource.js" />

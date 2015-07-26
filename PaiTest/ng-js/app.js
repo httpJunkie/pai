@@ -2,41 +2,33 @@
 angular
     .module("isama-index", ["common.services", "ngRoute"])
     .config(config)
-    .controller("TeamMemberListCtrl", ["teamMemberResource", TeamMemberListCtrl])
-    .controller("teamController", teamController)
-    .controller("contactController", contactController);
+    .controller("TeamCtrl", ["teamMemberResource", TeamCtrl]);
 
 function config($routeProvider) {
-    $routeProvider
-        .when("/", {
-            templateUrl: "/ng-js/about.html",
-            controller: "aboutController",
-            controllerAs: "vm"
-        })
-        .when("/about", {
-            templateUrl: "/ng-js/about.html",
-            controller: "aboutController",
-            controllerAs: "vm"
-        })
-        .when("/team", {
-            templateUrl: "/ng-js/team.html",
-            controller: "TeamMemberListCtrl",
-            controllerAs: "vm"
-        })
-        .when("/services", {
-            templateUrl: "/ng-js/services.html",
-            controller: "servicesController",
-            controllerAs: "vm"
-        })
-        .when("/projects", {
-            templateUrl: "/ng-js/projects.html",
-            controller: "projectsController",
-            controllerAs: "vm"
-        })
-        .otherwise({ redirectTo: "/" });
+$routeProvider
+    .when("/", {
+        templateUrl: "/ng-js/all.html",
+        controller: "TeamCtrl",
+        controllerAs: "vm"
+    })
+    .when("/about", {
+        templateUrl: "/ng-js/about.html",
+    })
+    .when("/team", {
+        templateUrl: "/ng-js/team.html",
+        controller: "TeamCtrl",
+        controllerAs: "vm"
+    })
+    .when("/services", {
+        templateUrl: "/ng-js/services.html",
+    })
+    .when("/projects", {
+        templateUrl: "/ng-js/projects.html",
+    })
+    .otherwise({ redirectTo: "/" });
 };
 
-function TeamMemberListCtrl(teamMemberResource) {
+function TeamCtrl(teamMemberResource) {
     var vm = this;
     vm.loggedOn = false;
     vm.loggedinUser = "";
@@ -56,7 +48,6 @@ function TeamMemberListCtrl(teamMemberResource) {
                     vm.loggedinUser = vm.teamMembers[i].UserName;
                     //window.location = "/Welcometemplate";
                     return;
-
                 }
             }
         }
@@ -69,13 +60,18 @@ function TeamMemberListCtrl(teamMemberResource) {
     };
 }
 
-function aboutController() {
-    var vm = this;
-    vm.title = "about";
-    vm.subtitle = "about page";
-};
+//Ready in case we want to add controllers to the static templates
+//function aboutCtrl() {
+//    var vm = this;
+//    vm.title = "about";
+//};
 
-function servicesController() {
-    var vm = this;
-    vm.title = "This is a contact page.";
-};
+//function servicesCtrl() {
+//    var vm = this;
+//    vm.title = "services";
+//};
+
+//function projectsCtrl() {
+//    var vm = this;
+//    vm.title = "projects";
+//};
