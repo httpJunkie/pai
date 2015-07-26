@@ -29,14 +29,14 @@ body {
         text-decoration: none;
     }
 }
-#mapDiv { 
+#contact { 
     width: 100%; 
     height: 300px;
-
+    margin-top: 2em;
 }
-/* REALLY BOOTSTRAP? 
-    After an hour of testing every style on my page this got rid of horizontal scrollers? 
-*/.row { margin: 0; padding: 0 }
+
+/*  Remove horizontal scrollbars */
+.row { margin: 0; padding: 0 }
 
 /* Top Navbar Color Override*/
 .navbar-default {
@@ -65,6 +65,10 @@ body {
     line-height: 20px;
     padding-top: 10px;
     padding-bottom: 10px;}
+}
+
+.welcome-login {
+    margin-top: 1em;
 }
 
 /* Customize default button styles */
@@ -470,7 +474,4 @@ footer {
      content: " ";
      margin-left: 0 !important;
      }
-}
-#mapDiv {
-    margin-top: 2em;
 }
