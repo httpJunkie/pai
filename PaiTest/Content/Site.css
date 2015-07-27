@@ -376,8 +376,14 @@ li.spacerFirst {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      margin-top: auto;
-      margin-bottom: auto; }
+      margin-top: auto; }
+  .projectBox .navStripe {
+    margin-top: -12px; }
+  .projectBox .navStripe a {
+    color: #c7c9ce;
+    font-size: 1.5em; }
+  .projectBox .navStripe a:hover {
+    color: #575756; }
 
 /* PROJECTS SECTION END */
 /* TEAM SECTION START */

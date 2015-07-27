@@ -434,9 +434,18 @@ li.spacerFirst {
             margin-left: auto;
             margin-right: auto;
             margin-top: auto;
-            margin-bottom: auto;
         }
     }
+    .navStripe {
+        margin-top: -12px;
+    }
+    .navStripe a {
+        color: #c7c9ce;
+        font-size: 1.5em;
+    }
+    .navStripe a:hover {
+            color: $DefaultGrey;
+        }
 }
 /* PROJECTS SECTION END */
 
