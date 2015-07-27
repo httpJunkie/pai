@@ -44,6 +44,44 @@ body {
   width: 100%;
   height: 300px; }
 
+#social-right {
+  margin-right: 21px; }
+
+.btn.outline {
+  margin-top: 6px;
+  background: none;
+  padding: 6px 20px;
+  font-size: 1em;
+  font-weight: 600; }
+
+.btn-default.outline {
+  border: 2px solid #cecece;
+  color: #cecece; }
+
+.btn-default.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+  color: White;
+  border-color: White;
+  background-color: white;
+  background-color: #575756;
+  border-color: #eceef4;
+  font-weight: 600; }
+
+.btn-default.outline.active, .btn-default:active, .btn-default.active.focus {
+  outline: 0;
+  margin-top: 6px;
+  font-weight: 600;
+  color: #575756;
+  background-color: #fff;
+  border-color: White;
+  box-shadow: none; }
+
+.btn-default.outline.active:hover {
+  color: White;
+  background-color: #6d6e71;
+  border-color: #eceef4;
+  font-weight: 600; }
+
+/* Customize default button styles */
 /* Optional no gutter grid style */
 .header-logo {
   max-width: 100%; }
@@ -91,33 +129,6 @@ body {
 /* added styles for modal welcome message*/
 .modal-content > .modal-body > p.welcome-login {
   margin-top: 1em; }
-
-/* Customize default button styles */
-.btn-default {
-  margin-top: 6px;
-  font-weight: 600;
-  color: #575756;
-  background-color: #fff;
-  border-color: #eceef4; }
-
-.btn-default.active, .btn-default:active, .btn-default:hover, .open > .dropdown-toggle.btn-default {
-  margin-top: 6px;
-  font-weight: 600;
-  color: #fff;
-  background-color: #00a1de;
-  border-color: #eceef4; }
-
-.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
-  outline: 0;
-  margin-top: 6px;
-  font-weight: 600;
-  color: #575756;
-  background-color: #fff;
-  border-color: #eceef4;
-  box-shadow: none; }
-
-#social-right {
-  margin-right: 21px; }
 
 /* Top Left Nav Spacers */
 li.spacer {
@@ -285,31 +296,57 @@ li.spacerFirst {
   margin-top: 2em;
   padding-top: 2em; }
 
+.about-section .media-heading {
+  margin-top: 0.375em;
+  margin-bottom: 1em;
+  font-weight: 600;
+  font-size: 1.688em; }
+
 /* ABOUT SECTION END*/
 /* TITLE SECTION END */
 .title-section {
-  margin-top: 6em;
+  margin-top: 4em;
   padding-top: 6em;
-  padding-bottom: 2em;
+  padding-bottom: 0.5em;
   background-image: url(/Content/images/title/title-divider.png);
   background-repeat: no-repeat;
   background-position: 0 0, center; }
 
+.title-section .media-heading {
+  margin-top: 0.75em;
+  margin-bottom: 0.325em;
+  font-weight: 700; }
+
 /* TITLE SECTION END */
+/* SERVICE SECTION START */
+.service-section:last-of-type {
+  border-left: 1px solid #eceef4; }
+
+.service-section > .col-sm-12 {
+  margin-top: 3em; }
+
+.service-section .media-heading {
+  margin-top: 0.312em;
+  margin-bottom: 0.75em;
+  font-weight: 600;
+  font-size: 1.5em; }
+
+/* SERVICE SECTION END */
 /* PROJECTS SECTION START */
 .projects-section {
   padding-bottom: 2em;
-  background-color: #efefef; }
+  background-color: #ededed; }
 
 .topCurve {
   padding-top: 4em;
   margin-top: 6em;
   border-radius: 50% 50% 0 0;
-  background-color: #efefef;
+  background-color: #ededed;
   margin-bottom: 0; }
 
-.media-head-projects {
-  margin-top: 2.375em; }
+.projects-section .media-heading {
+  margin-top: 2.375em;
+  font-weight: 700; }
 
 /* PROJECTS SECTION END */
 /* TEAM SECTION START */
@@ -360,19 +397,6 @@ li.spacerFirst {
     margin-left: 0 !important; }
 
 /* TEAM SECTION END */
-/* SERVICE SECTION START */
-.services {
-  margin-top: 1em; }
-  .services img.media-object {
-    width: 100px; }
-
-.service-section:last-of-type {
-  border-left: 1px solid #eceef4; }
-
-.service-section > .col-sm-12 {
-  margin-top: 6em; }
-
-/* SERVICE SECTION END */
 /* SOCIAL FOOTER START */
 #social-foot {
   color: #6d6e71;
