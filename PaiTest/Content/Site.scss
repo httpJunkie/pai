@@ -26,7 +26,7 @@ $ProjectsHoverColor: #6d6e71;
 /*  Ems 16px based Table
 
     Sixteenth Units
-    0.0625, 0.125, 0.1875, 0.25, 0.3125, 0.375, 0.4375, 0.5, 
+    0.0625, 0.125, 0.1875, 0.25, 0.3125, 0.375, 0.4375, 0.5,
     0.5625, 0.625, 0.6875, 0.75, 0.8125, 0.875, 0.9375, 1
 
     Conversion
@@ -65,8 +65,8 @@ body {
         text-decoration: none;
     }
 }
-#contact { 
-    width: 100%; 
+#contact {
+    width: 100%;
     height: 300px;
 }
 
@@ -228,9 +228,9 @@ li.spacerFirst {
     border-width: 7px 7px 0;
 }
 .contact-link + .tooltip > .tooltip-inner {
-    background-color: #fff; 
-    color: #333; 
-    border: 1px solid #d4d4d4; 
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #d4d4d4;
     padding: 1em;
     font-size: 1em;
 }
@@ -238,7 +238,7 @@ li.spacerFirst {
     border-top: 5px solid #d4d4d4;
 }
 .contact-bar {
-    margin-top: 55px;
+    margin-top: 54px;
 }
 .contact-icon {
     color: $SocialGrey;
@@ -481,7 +481,7 @@ li.spacerFirst {
         display: inline;
         border: none;
         margin:-10px;
-    } 
+    }
     .social-stripe ul li {
         border: none;
         list-style: none;
@@ -500,7 +500,7 @@ li.spacerFirst {
      margin-right: 1em;
      margin-left: 1em;
      }
-     
+
     .social-stripe ul li.first:before {
      content: " ";
      margin-left: 0 !important;
@@ -521,7 +521,7 @@ li.spacerFirst {
     border: none;
     padding: 0;
     margin: 0;
-} 
+}
 #social-foot ul li.divider-vertical {
     height: 50px;
     margin-right: 1em;
@@ -564,7 +564,7 @@ li.spacerFirst {
  }
 /* SOCIAL FOOTER END */
 
- 
+
 /* FOOTER NAVIGATION START */
 footer {
     width:100%;
@@ -580,7 +580,7 @@ footer {
 #foot-nav ul {
     display: inline;
     border: none;
-} 
+}
 #foot-nav ul li {
     border: none;
     list-style: none;
